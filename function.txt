@@ -1,0 +1,22 @@
+
+SetAccountBalance(AccountNumber, Balance)
+
+CreateSavingAccountTransactionByBanker(Type, Amount, TransactionRemarks,SrcAccount)
+
+CreditSavingAccountByBanker()
+{
+	SetAccountBalance()
+	CreateSavingAccountTransactionByBanker():{Type="Credit"}
+}
+
+DebitSavingAccountByBanker()
+{
+	SetAccountBalance()
+	CreateSavingAccountTransactionByBanker():{Type="Debit"}
+}
+
+CreditLoanAccount()
+{
+	CreateLoanAccountTransactionByBanker
+}
+
